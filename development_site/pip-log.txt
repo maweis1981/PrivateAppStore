@@ -1,0 +1,47 @@
+Downloading/unpacking ipgrade
+  Getting page http://pypi.python.org/simple/ipgrade
+Exception:
+Traceback (most recent call last):
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 823, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 55, in find_requirement
+    page = self._get_page(main_index_url, req)
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 282, in _get_page
+    return HTMLPage.get_page(link, req, cache=self.cache)
+  File "/Library/Python/2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 363, in get_page
+    resp = urllib2.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 124, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 389, in open
+    response = meth(req, response)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 502, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 421, in error
+    result = self._call_chain(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 361, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 597, in http_error_302
+    return self.parent.open(new)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 383, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 401, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 361, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 1130, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 1103, in do_open
+    r = h.getresponse()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 950, in getresponse
+    response.begin()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 390, in begin
+    version, status, reason = self._read_status()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 348, in _read_status
+    line = self.fp.readline()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/socket.py", line 395, in readline
+    data = recv(1)
+KeyboardInterrupt

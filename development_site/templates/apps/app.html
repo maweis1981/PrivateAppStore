@@ -1,0 +1,445 @@
+{% extends "appMain.html" %}
+
+{% block cateContent %}
+ <a target="_blank" href="/apps/category/{{ app.primaryCategory.cate_id }}">{{ app.primaryCategory.cate_name }}</a> 
+{% endblock cateContent %}
+
+{% block appContent %}
+  <!-- 内容开始 -->
+        <div class="APP_contain2">
+            <!-- left -->
+            <div class="APP_left">
+                
+
+<div class="APP_left1">
+                    <a href="http://www.app111.com/info/439254960/">
+                        <div>
+                            <img src="{{ app.icon }}" /><span class="mask"></span></div>
+                    </a>
+                </div>
+             
+   <div class="APP_left2">
+                    <a id="download" href="#3" target="_blank" onclick="return its.detect.openItunes('<a href="http://click.linksynergy.com/fs-bin/stat?id=KQ7PGBcyc0M&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fid{{ app.app_id }}%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30"');"></a>
+                    <p>
+                        <a href="http://www.app111.com/doc/100000523_1.html" target="_blank">不能下载？</a> <a
+                            href="#" target="_blank" style="display: none;">二维码下载</a></p>
+                </div>
+
+                <div class="APP_left3">
+                    <!-- 展开前效果 -->
+                    <div>
+                        iTunes售价：<span class="APP_left3_color1">{{ app.price }}</span>
+                        <br />
+                        下载次数：1670次<br />
+                        应用大小：{{ app.fileByteSize }}<a href="javascript:zhankai(1);" class="span_con1" id="zhankaia"></a>
+                    </div>
+                    <!-- 展开后效果 -->
+                    <div class="APP_left3_1" style="display: none;" id="zhankaihou">
+                        类别：<a href="http://www.app111.com/home/101019001/" target="_blank">工具</a>
+                        <br />
+                        更新：2011-05-25
+                        <br />
+                        当前版本：1.0
+                        <br />
+                        语言：英语
+                        <br />
+                        开发商：<a href="http://www.app111.com/developer/439254960" target="_blank">Sun Xun</a><br />
+                        <p>
+                            运行环境：与 iPhone、iPod touch、iPad 兼容。 需要 iOS 3.2 或更高版本</p>
+                    </div>
+                </div>
+
+                <div class="APP_left5 APP_left4_border1">
+                    <div class="left_tit2">
+                        <a href="/home/101024001" title="本类应用排行" target="_blank">
+                            本类应用排行</a>
+                        <div class="left_tit2_1">
+                            <ul>
+                                <li><a href="javascript:ThisAppSortShow(1);" class="here1" id="sortfree">免费</a></li>
+                                <li><a href="javascript:ThisAppSortShow(0);" id="sortnofree">付费</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="APP_left5_ul1" id="appsortfree">
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="真实手机电话定位器" href="http://www.app111.com/info/435344431"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/07/435344431.jpg?ver=20110525" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con2"></span><a title="真实手机电话定位器"
+                                    href="http://www.app111.com/info/435344431/" target="_blank">
+                                    真实手机电话定位器</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="装机360" href="http://www.app111.com/info/435865057"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/15/435865057.jpg?ver=20110515" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con3"></span><a title="装机360"
+                                    href="http://www.app111.com/info/435865057/" target="_blank">
+                                    装机360</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="限时免费" href="http://www.app111.com/info/427577372"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/03/26/427577372.jpg?ver=20110421" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con4"></span><a title="限时免费"
+                                    href="http://www.app111.com/info/427577372/" target="_blank">
+                                    限时免费</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="流量监测仪(上网必备)" href="http://www.app111.com/info/425315731"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/03/24/425315731.jpg?ver=20110407" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con5"></span><a title="流量监测仪(上网必备)"
+                                    href="http://www.app111.com/info/425315731/" target="_blank">
+                                    流量监测仪(上网必备)</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li style="border-bottom: 0px;">
+                            <div class="left_li_1">
+                                <a title="电池医生" href="http://www.app111.com/info/350752263"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2010/11/29/350752263.jpg?ver=20110323" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con6"></span><a title="电池医生"
+                                    href="http://www.app111.com/info/350752263/" target="_blank">
+                                    电池医生</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <ul class="APP_left5_ul1" id="appsortnofree" style="display: none;">
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="私密照片" href="http://www.app111.com/info/436002858"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/12/436002858.jpg?ver=20110525" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con2"></span><a title="私密照片"
+                                    href="http://www.app111.com/info/436002858/" target="_blank">
+                                    私密照片</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="密码保管箱" href="http://www.app111.com/info/431616313"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/21/431616313.jpg?ver=20110423" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con3"></span><a title="密码保管箱"
+                                    href="http://www.app111.com/info/431616313/" target="_blank">
+                                    密码保管箱</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="Motion Ruler" href="http://www.app111.com/info/335017364"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/22/335017364.jpg?ver=20100106" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con4"></span><a title="Motion Ruler"
+                                    href="http://www.app111.com/info/335017364/" target="_blank">
+                                    Motion Ruler</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li >
+                            <div class="left_li_1">
+                                <a title="Download Accelerator" href="http://www.app111.com/info/415359128"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2011/05/24/415359128.jpg?ver=20110518" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con5"></span><a title="Download Accelerator"
+                                    href="http://www.app111.com/info/415359128/" target="_blank">
+                                    Download Accelerator</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                        <li style="border-bottom: 0px;">
+                            <div class="left_li_1">
+                                <a title="CalculatorBox" href="http://www.app111.com/info/400041339"
+                                    target="_blank">
+                                    <div>
+                                        <img src="http://img5.pcpop.com/AppImg/40x40/2010/12/01/400041339.jpg?ver=20110307" /></div>
+                                    <span class="home_mask_3"></span></a>
+                            </div>
+                            <div class="left_li_2">
+                                <span class="span_con6"></span><a title="CalculatorBox"
+                                    href="http://www.app111.com/info/400041339/" target="_blank">
+                                    CalculatorBox</a></div>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="APP_left6">
+                    <div class="left_tit1">
+                        来自此厂商的更多应用</div>
+                    <div class="APP_left6_1 APP_left4_border1">
+                        <ul class="APP_left5_ul1">
+                            
+                            
+                            <li style="border-bottom: 0px;">
+                                <div class="left_li_1">
+                                    <a title="红袖添香精选5本" href="http://www.app111.com/info/417220668/" target="_blank">
+                                        <div>
+                                            <img src="http://img5.pcpop.com/AppImg/40x40/2011/02/12/417220668.jpg?updtime=20110224" /></div>
+                                        <span class="home_mask_3"></span></a>
+                                </div>
+                                <div class="left_li_2">
+                                    <a title="红袖添香精选5本" href="http://www.app111.com/info/417220668/" target="_blank">
+                                        红袖添香精选5本</a></div>
+                                <div class="clear">
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- right -->
+            <div class="APP_right">
+                <div class="APP_right_tit1">
+                    <a title="新浪微博分享" href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent('我刚下载了一个苹果应用：限时免费 360，感觉还不错，大家快来体验吧~ ')+'&url='+encodeURIComponent(location.href)+'&pic='+encodeURIComponent('http://img5.pcpop.com/AppImg/160x160/2011/05/25/439254960.jpg?updtime=20110525')+'&ralateUid=1865532255&appkey=1649728656','_blank','width=450,height=400');})()" class="a_icon1"></a>
+                    <h1>
+                        <a href="http://www.app111.com/info/439254960/">{{ app.title }}</a></h1>
+                    <p>
+                        <span class="xx_45"></span>
+                        9份评级</p>
+                </div>
+                
+    
+    <div class="APP_nav1">
+        <ul>
+            <li><a href="javascript:void(0);" class="here1">总览</a></li>
+            <li><a href="http://www.app111.com/439254960/reviews/">点评<span>(0)</span></a></li>
+        </ul>
+        <div class="clear">
+        </div>
+    </div>
+    
+    <div class="APP_right1">
+        <div class="right_tit1">
+            简介</div>
+        <p>
+            24小时发布最新,最火的限时免费应用。</p>
+    </div>
+    
+    <div class="APP_right1 APP_right2">
+        <div class="right_tit2">
+            应用说明</div>
+        <div class="APP_right2_1">
+            
+            <p id="sumlittle">
+		{{ app.description|linebreaksbr }}</p>
+            <p id="summore" style="display: none;">
+		{{ app.description|linebreaksbr }}</p>
+            
+        </div>
+    </div>
+    
+    <div class="APP_right1 APP_right3">
+        <div class="right_tit2">应用截图</div>
+        <div class="APP_right4_1">
+            <ul  id="typephone">
+		{% for s in app.screenshots.all %}
+		<li><img alt="" src="{{ s.screenshot_url }}" /></li>				
+		{% endfor %}
+
+        <div class="right_tit2">iPad应用截图</div>
+		{% for s in app.ipad_screenshots.all %}
+		<li><img alt="" src="{{ s.ipad_screenshot_url }}" /></li>									
+		{% endfor %}
+
+      <div class="right_tit2">iPad应用截图</div>
+			{% for s in app.app_comments.all %}
+			<li>{{ s.country }} ({{ s.rating }}))<b>{{ s.topic }}</b> | {{ s.review }} </li>				
+			{% endfor %}
+			</ul>			
+        </div>
+    </div>
+    
+    <div class="clear">
+    </div>
+    <div class="APP_Comment1" id="anchor">
+        <div id="appComment" name="appComment" style="height: 100%;">
+        </div>
+        <div class="APP_Comment2" style="display: none;">
+            <div class="APP_Comment2_up">
+            </div>
+            <div class="APP_Comment2_1">
+                <ul>
+                    <li><b class="APP_Comment2_b1">我来点评</b> <span class="xx_0" id="reviewsstyle">
+                        <div style="width: 24px; height: 20px; float: left;">
+                        </div>
+                        <div style="width: 24px; height: 20px; float: left;">
+                        </div>
+                        <div style="width: 24px; height: 20px; float: left;">
+                        </div>
+                        <div style="width: 24px; height: 20px; float: left;">
+                        </div>
+                        <div style="width: 24px; height: 20px; float: left;">
+                        </div>
+                    </span>&nbsp;<em id="reviewsl">点击星星打分</em><input type="hidden" id="hidreviewsstar"
+                        value="" /></li>
+                    <li>
+                        <p>
+                            &nbsp;&nbsp;标题：
+                            <input type="text" id="txtreviewstitle" class="Comment_txt1" />
+                        </p>
+                    </li>
+                    <li>
+                        <p class="APP_Comment2_p1">
+                            <textarea name="txtreviewscontent" cols="10" rows="10" id="txtreviewscontent" class="Comment_area1"></textarea>
+                        </p>
+                        <p class="APP_Comment2_p2" id="reviewscount">
+                            你还可以输入<br />
+                            140个字符
+                        </p>
+                        <p class="APP_Comment2_p2">
+                            <input type="button" class="Comment_btn1" id="btnReviewSave" />
+                        </p>
+                        <div class="clear">
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <p>
+                            验证码：
+                            <input type="text" class="Comment_txt2" />
+                            <img src="images/12_113.jpg" /></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="APP_Comment2_down">
+	
+
+
+	
+            </div>
+        </div>
+        <div class="APP_right1 APP_right6">
+            <div class="right_tit2 right_tit3">
+                同类应用推荐</div>
+            <ul>
+                
+                <li><a title="超炫电子闹钟" href="http://www.app111.com/info/332064280/" target="_blank">
+                    <div>
+                        <img src="http://img5.pcpop.com/AppImg/75x75/2010/11/26/332064280.jpg?updtime=20110401" alt="超炫电子闹钟" /><span class="home_mask_1"></span></div>
+                </a>
+                    <p>
+                        <a title="超炫电子闹钟" href="http://www.app111.com/info/332064280/" target="_blank">
+                            超炫电子闹钟</a></p>
+                    <b>
+                        工具</b> </li>
+                
+                <li><a title="电池医生" href="http://www.app111.com/info/350752263/" target="_blank">
+                    <div>
+                        <img src="http://img5.pcpop.com/AppImg/75x75/2010/11/29/350752263.jpg?updtime=20110323" alt="电池医生" /><span class="home_mask_1"></span></div>
+                </a>
+                    <p>
+                        <a title="电池医生" href="http://www.app111.com/info/350752263/" target="_blank">
+                            电池医生</a></p>
+                    <b>
+                        工具</b> </li>
+                
+                <li><a title="限时免费 360" href="http://www.app111.com/info/439254960/" target="_blank">
+                    <div>
+                        <img src="http://img5.pcpop.com/AppImg/75x75/2011/05/25/439254960.jpg?updtime=20110525" alt="限时免费 360" /><span class="home_mask_1"></span></div>
+                </a>
+                    <p>
+                        <a title="限时免费 360" href="http://www.app111.com/info/439254960/" target="_blank">
+                            限时免费 360</a></p>
+                    <b>
+                        工具</b> </li>
+                
+                <li><a title="手机QQ浏览器" href="http://www.app111.com/info/370139302/" target="_blank">
+                    <div>
+                        <img src="http://img5.pcpop.com/AppImg/75x75/2010/11/30/370139302.jpg?updtime=20110516" alt="手机QQ浏览器" /><span class="home_mask_1"></span></div>
+                </a>
+                    <p>
+                        <a title="手机QQ浏览器" href="http://www.app111.com/info/370139302/" target="_blank">
+                            手机QQ浏览器</a></p>
+                    <b>
+                        工具</b> </li>
+                
+                <li><a title="身份通 - 身份证核查 手机归属地 同名同姓" href="http://www.app111.com/info/383008983/" target="_blank">
+                    <div>
+                        <img src="http://img5.pcpop.com/AppImg/75x75/2010/11/26/383008983.jpg?updtime=20101222" alt="身份通 - 身份证核查 手机归属地 同名同姓" /><span class="home_mask_1"></span></div>
+                </a>
+                    <p>
+                        <a title="身份通 - 身份证核查 手机归属地 同名同姓" href="http://www.app111.com/info/383008983/" target="_blank">
+                            身份通 - 身</a></p>
+                    <b>
+                        工具</b> </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+
+
+
+
+{% endblock appContent %}

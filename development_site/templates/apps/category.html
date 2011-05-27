@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+
+{% block cate_menu_content %}
+<li>
+{% for c in categories %}
+<a href="/apps/category/{{ c.cate_id }}" class="">{{ c.cate_name }} ({{ c.primary_category_apps.all.count }})</a>	| 
+{% endfor %}
+</li>
+{% endblock %}
+{% block appContent %}
+	{% for a in apps %}
+	  <li><a target="_blank" href="/apps/app/{{ a.app_id }}" style="display: block; height: 115px;
+            width: 226px; position: absolute; left: 0; top: 0; cursor: pointer; text-decoration: none;
+            z-index: 4; background: url(&quot;/Images/space.gif&quot;) repeat scroll 0% 0% transparent;"
+            title="{{ a.title }}"></a>
+            
+            <!-- <span class="corner_mark">
+                       1</span> -->
+            
+            <div style="position: absolute; z-index: 1;">
+                <div class="APP_pic1">
+                    <img alt="{{ a.title }}" class="artwork" src="{{ a.icon }}"
+                        width="80" height="80" />
+                    <span class="mask_xiao"></span>
+                </div>
+                <div class="APP_font1">
+                    <p title="{{ a.title }}" class="p_name1">
+                        {{ a.title }}</p>
+                    <span class="span_xx30"></span>
+                    <p class="p_price1">
+                        {{ a.price }}
+                    </p>
+                    <!-- <p class="APP_p1">
+                        <span class="span_bg2">0</span>
+                    </p> -->
+                </div>
+            </div>
+        </li>
+{% endfor %}
+{% endblock %}
+{% block pageContent %} 
+<p>Page</p>
+{% endblock %}	
